@@ -33,4 +33,5 @@ jobs:
               with:
                 spec: cypress/integration/1-getting-started
                 browser: firefox
+                run: npm run cypress:open
 
