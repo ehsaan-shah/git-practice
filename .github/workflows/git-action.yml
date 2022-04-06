@@ -34,6 +34,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: start node server
+        uses: cypress-io/github-action@v2
         with:
           runTests: false
           start: npm start
