@@ -1,0 +1,22 @@
+{
+  "name": "git-practice",
+  "version": "1.0.0",
+  "description": "practice Git and Git Actions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ehsaan-shah/git-practice.git"
+  },
+  "author": "Sadia Rubbani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ehsaan-shah/git-practice/issues"
+  },
+  "homepage": "https://github.com/ehsaan-shah/git-practice#readme",
+  "devDependencies": {
+    "cypress": "^9.5.3"
+  }
+}
