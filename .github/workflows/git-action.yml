@@ -13,29 +13,14 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
-      
-      - name: Install Node
-        uses: actions/setup-node@v2
-        with:
-          node-version: 16
-          run: node -v
+      - name: Checkout
+        uses: actions/checkout@v3
           
       - name: Install cypress
         uses: cypress-io/github-action@v2
         with:
           # just perform install
           build: npm run build
-          runTests: false
-
-  start-http-server:
-    # do nothing
-    runs-on: ubuntu-latest
-    steps:
-      - name: start node server
-        uses: cypress-io/github-action@v2
-        with:
           runTests: false
           start: npm start
  
