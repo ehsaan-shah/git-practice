@@ -7,31 +7,15 @@ on:
       - main
 
 jobs:
-  install:
-    # The type of runner that the job will run on
+  cypress-run:
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
-          
-      - name: Install cypress
+        uses: actions/checkout@v2
+      # Install NPM dependencies, cache them correctly
+      # and run all Cypress tests
+      - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
-          # just perform install
           build: npm run build
-          runTests: false
           start: npm start
- 
-  # run default tests      
-  e2e_tests:
-          runs-on: ubuntu-latest
-          steps:
-            - name: Execute Builtin Cypress Test Suite
-              uses: cypress-io/github-action@v2
-              with:
-                spec: cypress/integration/1-getting-started
-                browser: firefox
-                run: npm run cypress:open
-
