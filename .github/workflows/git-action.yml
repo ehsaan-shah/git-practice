@@ -28,8 +28,9 @@ jobs:
         with:
          runTests: false
       #
-      - name: Start Nodejs Server  
-        run: npm run start
+#      - name: Start Nodejs Server  
+#        with:
+#          start: start:npm
       #  
       - name: Execute Cypress Test Suite  With Chrome Browser
         run: npm cypress:chrome
