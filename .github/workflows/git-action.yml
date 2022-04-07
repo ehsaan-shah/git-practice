@@ -19,4 +19,4 @@ jobs:
         with:
         #  build: npm run build
           start: npm start
-          run: npm run cypress:open
+          run: npm run cypress:run
