@@ -27,7 +27,7 @@ jobs:
   #       
   execute-test-suite-with-chrome:
     runs-on: ubuntu-latest
-    needs: installation
+    needs: [installation]
     steps:
       - name: Execute Cypress Test Suite  With Chrome Browser
         run: npm run cypress:chrome
