@@ -6,6 +6,7 @@
   "scripts": {
     "build": "rollup -c",
     "start:npm": "npm start & wait-on https://example.cypress.io/todo:8080",
+    "start": "npm start",
     "test": "cypress run",
     "cypress:open": "cypress open",
     "cypress:run": "npx cypress run",
