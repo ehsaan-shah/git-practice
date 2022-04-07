@@ -14,6 +14,7 @@
     "cypress:firefox": "cypress run --browser firefox",
     "cypress:edge": "cypress run --browser edge",
     "cypress:electron": "cypress run --browser electron",
+    "cypress:chromium": "cypress run --browser chromium",
     "cypress:record": "cypress run --record --key"
   },
   "repository": {
