@@ -19,8 +19,7 @@ jobs:
         with:
           node-version: '16.13.0'
       # install NPM    
-      - run: npm Install
-
+     # - run: npm Install
       - name: Install Cypress & Start Node Server
         uses: cypress-io/github-action@v2
         with:
