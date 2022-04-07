@@ -8,7 +8,7 @@
     "start:npm": "npm start & wait-on https://example.cypress.io/todo:8080",
     "test": "cypress run",
     "cypress:open": "cypress open",
-    "cypress:run": "cypress run",
+    "cypress:run": "npx cypress run",
     "cypress:record": "cypress run --record --key"
   },
   "repository": {
