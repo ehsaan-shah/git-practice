@@ -17,10 +17,11 @@ jobs:
       - name: Install Nodejs
         uses: actions/setup-node@v3
         with:
-          node-version: '16.13.0'
+          node-version:  16 #'16.13.0'
       - name: Install Cypress & Start Node Server
         uses: cypress-io/github-action@v2
         with:
+          build: npm run build
           start: start:npm
           runTests: false
       - name: Run Cypress Test Suite
@@ -28,4 +29,4 @@ jobs:
         with:
           installl: false
           browser: chrome
-          run: cypress:run
+          script: cypress:run
