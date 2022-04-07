@@ -21,7 +21,6 @@ jobs:
       - name: Install Cypress & Start Node Server
         uses: cypress-io/github-action@v2
         with:
-          build: npm run build
           start: start:npm
           runTests: false
       - name: Run Cypress Test Suite
