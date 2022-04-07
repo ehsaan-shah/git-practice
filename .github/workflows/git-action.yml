@@ -28,4 +28,4 @@ jobs:
         with:
           installl: false
           browser: chrome
-          run: npm run cypress:run
+          run: cypress:run
