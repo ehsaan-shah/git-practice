@@ -33,7 +33,7 @@ jobs:
 #          start: start:npm
       #  
       - name: Execute Cypress Test Suite  With Chrome Browser
-        run: npm cypress:chrome
+        run: npm run cypress:chrome
 
 #        uses: cypress-io/github-action@v2
 #        with:
