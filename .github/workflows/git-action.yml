@@ -12,20 +12,28 @@ jobs:
     steps:
       - name: Checkout Test Repository
         uses: actions/checkout@v2
-      # Install NPM dependencies, cache them correctly
-      # and run all Cypress tests
+      #
       - name: Install Nodejs
         uses: actions/setup-node@v3
         with:
           node-version:  16 #'16.13.0'
-      - name: Install Cypress & Start Node Server
+#      - name: Install Cypress & Start Node Server
+#        uses: cypress-io/github-action@v2
+#        with:
+#          start: start:npm
+#          runTests: false
+      #
+      - name: Install Cypress
         uses: cypress-io/github-action@v2
-        with:
-          start: start:npm
-          runTests: false
-      - name: Run Cypress Test Suite
-        uses: cypress-io/github-action@v2
-        with:
-          installl: false
-          browser: chrome
-          script: cypress:run
+      #
+      - name: Start Nodejs Server  
+        run: start:npm
+      #  
+      - name: Execute Cypress Test Suite  With Chrome Browser
+        run: cypress:chrome
+
+#        uses: cypress-io/github-action@v2
+#        with:
+#          install: false
+#          browser: chrome
+#          run: cypress:run

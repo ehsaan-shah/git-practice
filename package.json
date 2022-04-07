@@ -9,7 +9,8 @@
     "start": "npm start",
     "test": "cypress run",
     "cypress:open": "cypress open",
-    "cypress:run": "npx cypress run",
+    "cypress:run": "npx cypress run --browser chrome",
+    "cypress:chrome": "npx cypress run --browser chrome",
     "cypress:record": "cypress run --record --key"
   },
   "repository": {
