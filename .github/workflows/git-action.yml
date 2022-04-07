@@ -29,7 +29,6 @@ jobs:
       #  
       - name: Execute Cypress Test Suite  With Firefox
         run: npm run cypress:firefox
-        headless: false
       #  
       - name: Execute Cypress Test Suite  With Edge
         run: npm run cypress:edge
