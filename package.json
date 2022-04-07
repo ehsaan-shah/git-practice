@@ -6,11 +6,11 @@
   "scripts": {
     "build": "rollup -c",
     "start:npm": "npm start & wait-on https://example.cypress.io/todo:8080",
-    "start": "npm start",
+    "starts": "npm start",
     "test": "cypress run",
     "cypress:open": "cypress open",
     "cypress:run": "npx cypress run --browser chrome",
-    "cypress:chrome": "npx cypress run --browser chrome",
+    "cypress:chrome": "cypress run --browser chrome",
     "cypress:record": "cypress run --record --key"
   },
   "repository": {
