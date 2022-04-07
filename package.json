@@ -11,6 +11,7 @@
     "cypress:open": "cypress open",
     "cypress:run": "npx cypress run --browser chrome",
     "cypress:chrome": "cypress run --browser chrome",
+    "cypress:firefox": "cypress run --browser firefox",
     "cypress:record": "cypress run --record --key"
   },
   "repository": {
