@@ -10,13 +10,19 @@ jobs:
   cypress-run:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout Test Repository
         uses: actions/checkout@v2
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests
-      - name: Cypress run
+      - name: Install Nodejs
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16.13.0'
+      # install NPM    
+      - run: npm Install
+
+      - name: Install Cypress & Start Node Server
         uses: cypress-io/github-action@v2
         with:
-        #  build: npm run build
           start: start:npm
           run: npm run cypress:run
