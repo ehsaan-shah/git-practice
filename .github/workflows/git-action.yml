@@ -18,20 +18,11 @@ jobs:
         with:
           node-version:  16 #'16.13.0'
           run: npm --version  
-#      - name: Install Cypress & Start Node Server
-#        uses: cypress-io/github-action@v2
-#        with:
-#          start: start:npm
-#          runTests: false
       #
       - name: Install Cypress
         uses: cypress-io/github-action@v2
         with:
          runTests: false
-      #
-#      - name: Start Nodejs Server  
-#        with:
-#          start: start:npm
       #  
       - name: Execute Cypress Test Suite  With Chrome Browser
         run: npm run cypress:chrome
