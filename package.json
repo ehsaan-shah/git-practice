@@ -11,7 +11,7 @@
     "cypress:open": "cypress open",
     "cypress:run": "npx cypress run --browser chrome",
     "cypress:chrome": "cypress run --browser chrome",
-    "cypress:firefox": "cypress open --browser firefox",
+    "cypress:firefox": "cypress run --browser firefox",
     "cypress:edge": "cypress run --browser edge",
     "cypress:electron": "cypress run --browser electron",
     "cypress:record": "cypress run --record --key"
